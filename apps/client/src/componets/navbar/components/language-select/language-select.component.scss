@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+
+  .option {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    color: var(--color-middle-gray);
+  }
+
+  .selected {
+    background-color: var(--color-green);
+    color: white;
+  }
+}

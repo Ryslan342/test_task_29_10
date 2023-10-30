@@ -1,0 +1,38 @@
+:host {
+  display: block;
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    .header {
+    }
+
+    .see-more-button {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      padding: 10px 20px;
+      color: var(--color-orange);
+      cursor: pointer;
+      font-size: 14px;
+
+      client-icon {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        padding-bottom: 2px;
+        padding-left: 1px;
+        margin: 0px 10px -1px 10px;
+        border: 2px solid var(--color-orange);
+        border-radius: 100%;
+
+      }
+    }
+  }
+}

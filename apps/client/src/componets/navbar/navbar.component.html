@@ -1,0 +1,37 @@
+<div id="event-promo"></div>
+
+<div id="header">
+  <img src="/assets/images/logo.svg">
+  city
+  <div style="margin: auto"></div>
+
+  <client-drop-down-list
+    [options]="moreOptions"
+    [selected]="{ text: 'More' }"
+  ></client-drop-down-list>
+
+  <client-drop-down-list
+    [options]="supportOptions"
+    [selected]="{ text: 'Support variants' }"
+  ></client-drop-down-list>
+
+  <client-language-select></client-language-select>
+</div>
+
+<div id="navigation">
+  <client-categories-select></client-categories-select>
+
+  <client-menu-search></client-menu-search>
+
+  <a class="login-link">
+    Login
+  </a>
+
+  <div class="hr"></div>
+  <client-icon class="one-icon-button"></client-icon>
+
+  <div class="hr"></div>
+  <client-icon class="one-icon-button"></client-icon>
+
+  <client-menu-cart></client-menu-cart>
+</div>

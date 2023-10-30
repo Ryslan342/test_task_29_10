@@ -1,0 +1,18 @@
+@import "../../styles";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  client-footer {
+    margin-top: auto;
+  }
+
+  .content-container {
+    @include main-content-grid();
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}

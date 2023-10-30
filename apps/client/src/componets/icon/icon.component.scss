@@ -1,0 +1,12 @@
+:host {
+  display: inline-block;
+  font-family: 'Comfy Icons';
+  font-size: var(--size);
+  font-weight: 300;
+  margin: 10px;
+
+  svg {
+    width: var(--size);
+    height: var(--size);
+  }
+}

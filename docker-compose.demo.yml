@@ -1,0 +1,57 @@
+version: "3"
+
+networks:
+  test_task_29_10_network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  redis-data:
+
+services:
+  postgres:
+    container_name: test_task_29_10_postgres
+    image: postgres:15.4
+    shm_size: "2gb"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: test_task_29_10
+    volumes:
+      - postgres-data:/var/lib/postgresql/test-task.29_10/data
+    ports:
+      - "5432:5432"
+    networks:
+      - test_task_29_10_network
+    restart: unless-stopped
+
+  redis:
+    container_name: test_task_29_10_redis
+    image: redis
+    volumes:
+      - redis-data:/var/lib/redis/test-task.29_10/data
+    ports:
+      - "6379:6379"
+    networks:
+      - test_task_29_10_network
+    restart: unless-stopped
+
+  api:
+    container_name: test_task_29_10_api
+    build: .
+    ports:
+      - 3000:3000
+    command:
+      - npm
+      - run
+      - backend:start
+
+  client:
+    container_name: test_task_29_10_client
+    build: .
+    ports:
+      - 4200:4200
+    command:
+      - npm
+      - run
+      - client:start

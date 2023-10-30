@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  margin: 15px 0;
+
+  font-size: 14px;
+
+  .stars-container {
+    font-family: "Comfy Icons";
+    width: 70px;
+
+    &.back {
+      color: var(--color-light-gray);
+    }
+    &.active-stars {
+      position: absolute;
+      overflow: hidden;
+      color: #ff6a00;
+    }
+  }
+
+  .comments-link {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    color: var(--color-alt-gray);
+    text-decoration-line: none;
+    cursor: pointer;
+
+    &:hover{
+      text-decoration-line: underline;
+    }
+
+    .comments-icon {
+      margin: 0 5px 0 15px;
+    }
+  }
+}

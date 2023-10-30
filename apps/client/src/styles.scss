@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Root UI'), url('https://fonts.cdnfonts.com/s/17770/PT Root UI_Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 300;
+  src: local('PT Root UI'), url('https://fonts.cdnfonts.com/s/17770/PT Root UI_Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Root UI'), url('https://fonts.cdnfonts.com/s/17770/PT Root UI_Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Root UI'), url('https://fonts.cdnfonts.com/s/17770/PT Root UI_Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Comfy Icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdn.comfy.ua/media/im/fonts/icons-v5.woff2");
+}
+
+body, html {
+  font-family: 'PT Root UI';
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --color-light-green: #57ba41;
+  --color-green: #43b02a;
+  --color-middle-green: #3ba724;
+  --color-dark-green: #379424;
+
+  --color-light-gray: #f2f2f2;
+  --color-gray: #ccc;
+  --color-alt-gray: #c4c4c4;
+  --color-middle-gray: #999;
+  --color-dark-gray: #616161;
+
+  --color-orange: #ff671f;
+}
+
+@mixin main-content-grid {
+  padding: 0px 10vw;
+}

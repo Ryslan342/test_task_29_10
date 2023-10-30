@@ -1,0 +1,49 @@
+:host {
+  padding: 5px;
+    position: relative;
+
+  .placeholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .placeholder::after {
+    display: inline-block;
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-top: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    transform: rotate(135deg);
+  }
+
+  .drop-down-offset {
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    height: 0px;
+    bottom: 0px;
+    width: 100%;
+
+    transform: translateY(-50%) scale(0.2);
+    filter: opacity(0.3);
+    transition: visibility 0s, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    .drop-down-window {
+      background: #fcfcfc;
+      min-width: max-content;
+      border-radius: 10px;
+      padding: 15px 5px;
+    }
+  }
+
+  &:hover {
+    .drop-down-offset {
+      visibility: visible;
+      filter: opacity(1);
+      transform: translateY(-50%) scale(1);
+    }
+  }
+}

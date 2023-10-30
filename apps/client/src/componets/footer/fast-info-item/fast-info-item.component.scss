@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-right: 40px;
+
+  .fast-info-icon {
+    color: var(--color-middle-green);
+    margin: 10px;
+  }
+
+  .fast-info-title {
+    margin: 8px 0 0 0;
+    font-size: 18px;
+  }
+
+  .fast-info-text {
+    margin: 10px 0px;
+    font-size: 14px;
+    color: var(--color-middle-gray);
+  }
+}

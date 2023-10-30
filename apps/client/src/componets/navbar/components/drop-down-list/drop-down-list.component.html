@@ -1,0 +1,12 @@
+<div class="placeholder">
+  <client-drop-down-option [option]="selected"></client-drop-down-option>
+</div>
+
+<div class="drop-down-offset">
+  <div class="drop-down-window">
+    <client-drop-down-option
+      *ngFor="let option of options"
+      [option]="option"
+    ></client-drop-down-option>
+  </div>
+</div>
