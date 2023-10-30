@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "api:start": "nx serve api",
-    "client:start": "nx serve client",
+    "client:start": "nx serve --host=0.0.0.0 client",
     "migration:create": "node node_modules/.bin/mikro-orm migration:create",
     "migration:create:blank": "node node_modules/.bin/mikro-orm migration:create --blank",
     "migration:up": "node node_modules/.bin/mikro-orm migration:up"
