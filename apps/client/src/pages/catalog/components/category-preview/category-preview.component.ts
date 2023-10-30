@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IProduct} from "../../../../componets/products-list-item/products-list-item.component";
+
+export interface ICategoryPreview {
+  title: string;
+  products: IProduct[]
+}
 
 @Component({
   selector: 'client-category-preview',
@@ -6,5 +12,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./category-preview.component.scss']
 })
 export class CategoryPreviewComponent {
-
+  @Input() cat: ICategoryPreview = { title: "null", products: [] }
 }

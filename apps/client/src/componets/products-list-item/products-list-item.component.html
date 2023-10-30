@@ -1,13 +1,13 @@
 <div class="product-gallery">
   <div class="photos-container">
-    <img class="" src="https://skin.comfy.ua/media/catalog/product/i/p/iphone-14-pro-storage-select-202209-6-7inch-deeppurple_1.jpg" alt="Product photo">
+    <img class="" [src]="product?.img" alt="Product photo">
   </div>
 <!--  <div class="gallery-controller>...</div>-->
 </div>
 
 <a class="product-name">
   <div class="full-name-drop-dawn">
-    Смартфон Samsung Galaxy A24 6/128Gb Black (SM-A245FZKVSEK)
+    {{ product?.name }}
   </div>
 </a>
 
@@ -22,7 +22,7 @@
   Fast delivery at <span style="color: green">0.05$</span>
 </div>
 
-<client-price-object></client-price-object>
+<client-price-object [price]="product?.price"></client-price-object>
 
 <!--<div>-->
 <!--  +500 bonuses-->
@@ -30,12 +30,12 @@
 
 <div class="product-attributes">
   <div class="row">
-    <span class="attribute-name">Attribute:</span>
+    <span class="attribute-name">Attribute1:</span>
     <span class="attribute-value">Value</span>
   </div>
   <div class="row">
     <span class="attribute-name">Attribute2:</span>
-    <span class="attribute-value">Value2</span>
+    <span class="attribute-value">22mpx+5</span>
   </div>
   <div class="row">
     <span class="attribute-name">Attribute3:</span>

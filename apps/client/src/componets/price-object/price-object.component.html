@@ -1,11 +1,11 @@
 <div class="price-container">
-  <div class="old-price">
-    2 999$
-    <span class="stock">-11%</span>
+  <div class="old-price" *ngIf="price?.oldPrice">
+    {{ price?.oldPrice }} $
+    <span class="stock">{{ stock }}%</span>
   </div>
 
   <div class="actual-price">
-    2 666 $
+    {{ price?.actualPrice }} $
   </div>
 </div>
 

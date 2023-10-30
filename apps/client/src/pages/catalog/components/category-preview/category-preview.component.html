@@ -1,5 +1,5 @@
 <div class="header-container">
-  <h3 class="header">Title</h3>
+  <h3 class="header">{{ cat.title }}</h3>
   <a class="see-more-button">
     See more
     <client-icon [size]="14">></client-icon>
@@ -7,5 +7,5 @@
 </div>
 
 <div class="products-list">
-  <client-products-list-item></client-products-list-item>
+  <client-products-list-item *ngFor="let product of cat.products" [product]="product"></client-products-list-item>
 </div>

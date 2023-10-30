@@ -16,9 +16,9 @@ export class NavbarComponent {
   ];
 
   supportOptions: IDropDownListOption[] = [
-    { text: "telegram" },
-    { text: "viber" },
-    { text: "phone" },
-    { text: "online chat" }
+    { text: "Telegram" },
+    { text: "Viber" },
+    { text: "Phone" },
+    { text: "Online chat" }
   ];
 }

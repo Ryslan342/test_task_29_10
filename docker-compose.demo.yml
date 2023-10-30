@@ -44,13 +44,14 @@ services:
     command:
       - npm
       - run
-      - backend:start
+      - api:start
 
   client:
     container_name: test_task_29_10_client
     build: .
     ports:
       - 4200:4200
+      - 80:4200
     command:
       - npm
       - run
